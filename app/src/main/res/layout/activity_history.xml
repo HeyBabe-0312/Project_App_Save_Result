@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".History"
+    android:background="@color/blue"
+    android:stretchColumns="1,2,3,4"
+    android:layout_margin="8dp">
+    <TableRow >
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:background="@drawable/cell_shape"
+            android:gravity="center"
+            android:padding="10dp"
+            android:id="@+id/col1"
+            android:textColor="#000"
+            android:text="DATETIME"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        <TextView
+            android:text="PASS"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/cell_shape"
+            android:padding="10dp"
+            android:id="@+id/col2"
+            android:layout_column="2" />
+
+        <TextView
+            android:layout_width="65dp"
+            android:textColor="#000"
+            android:layout_height="match_parent"
+            android:layout_column="3"
+            android:id="@+id/col3"
+            android:background="@drawable/cell_shape"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="ERROR"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        <TextView
+            android:text="RATE"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/col4"
+            android:background="@drawable/cell_shape"
+            android:padding="10dp"
+            android:layout_column="4" />
+    </TableRow>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</TableLayout>
